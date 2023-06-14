@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="music-container">
+            <h2 id="title">BULLEYA</h2>
+            <h3 id="artist"> </h3>
+            <div class="img-contener">
+                <img src="./img/BULLYA.jpg"
+                    alt="img">
+                <audio
+                    src="./music/Bulleya_(Ae_Dil_Hai_Mushkil)_320_Kbps.mp3"></audio>
+            </div>
+            <!-- progracebaar -->
+            <div class="progerss_con">
+                <div class="duration_meeter">
+                    <div id="current_time">0:00</div>
+                    <div id="total_duration">5:48
+                    </div>
+                </div>
+                <div class="progress" id="progress_div">
+                    <div class="progr" id="prog"></div>
+
+
+
+                </div>
+            </div>
+
+            <div class="music-controns">
+            
+                <i class="bi bi-arrow-clockwise" id="loop"></i>
+                <i class="bi bi-skip-start-circle-fill" id="pre" title="previous"></i>
+                <i class="bi bi-play-circle-fill" id="play" title="play"></i>
+                <i class="bi bi-skip-end-circle-fill" id="next" title="next"></i>
+                <i class="bi bi-heart" id="like" style="color: red;"></i>
+                
+                
+
+            </div>
+        </div>
+    </div>
+   
+</body>
+<script src="./js/music Api.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
